@@ -14,3 +14,5 @@ http://jwt-auth.readthedocs.io/en/develop/laravel-installation/
  add in Kernel.php:
         'jwt.auth' => 'Tymon\JWTAuth\Middleware\GetUserFromToken',
         'jwt.refresh' => 'Tymon\JWTAuth\Middleware\RefreshToken',
+## CORS
+composer require barryvdh/laravel-cors
