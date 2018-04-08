@@ -28,6 +28,9 @@ Route::group([
     
 });
 
+Route::get('/user/friends','UserController@friends');
+Route::post('/user/{user_id}/add_friend','UserController@addFriend');
+Route::post('/user/{user_id}/remove_friend','UserController@removeFriend');
 
 Route::apiResource('post','PostController');
 Route::apiResource('user','UserController');
