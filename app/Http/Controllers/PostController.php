@@ -21,6 +21,9 @@ class PostController extends Controller
      */
     public function index()
     {
+
+        event(new \App\Events\Event());
+        
          return response()->json(Post::all());
     }
 

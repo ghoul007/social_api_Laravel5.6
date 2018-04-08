@@ -16,3 +16,8 @@ http://jwt-auth.readthedocs.io/en/develop/laravel-installation/
         'jwt.refresh' => 'Tymon\JWTAuth\Middleware\RefreshToken',
 ## CORS
 composer require barryvdh/laravel-cors
+
+## Redis
+docker-compose require predis/predis
+
+- php artisan event:generate
