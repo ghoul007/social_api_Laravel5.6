@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use \App\Events\PostCreated;
 class PostController extends Controller
 {
 
@@ -23,7 +23,7 @@ class PostController extends Controller
     {
 
         event(new \App\Events\Event());
-        
+
          return response()->json(Post::all());
     }
 
